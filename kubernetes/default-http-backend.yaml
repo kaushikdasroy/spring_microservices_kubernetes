@@ -43,6 +43,7 @@ metadata:
   labels:
     app: default-http-backend
 spec:
+  type: LoadBalancer
   ports:
     - port: 80
       targetPort: 8080
