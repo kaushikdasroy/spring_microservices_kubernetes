@@ -7,7 +7,7 @@ metadata:
 spec:
   backend:
     #serviceName: default-http-backend
-    serviceName: hello-world
+    serviceName: hello-world-svc
     #servicePort: 80
     servicePort: 8080
   rules:
