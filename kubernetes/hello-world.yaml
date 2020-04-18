@@ -1,7 +1,7 @@
 apiVersion: apps/v1beta1
 kind: Deployment
 metadata:
-  name: hello-world-deployment
+  name: hello-world
 spec:
   replicas: 1
   template:
@@ -19,7 +19,7 @@ spec:
 apiVersion: v1
 kind: Service
 metadata:
-  name: hello-world-svc
+  name: hello-world
 spec:
   ports:
     -  port: 8080
