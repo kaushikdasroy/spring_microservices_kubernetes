@@ -43,7 +43,6 @@ metadata:
   labels:
     app: organization
 spec:
-  type: LoadBalancer
   ports:
   - port: 8080
     protocol: TCP

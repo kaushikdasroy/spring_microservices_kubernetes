@@ -4,12 +4,11 @@ metadata:
   name: gateway-ingress
   annotations:
     nginx.ingress.kubernetes.io/rewrite-target: /
+    kubernetes.io/ingress.class: "nginx"
 spec:
   backend:
     serviceName: default-http-backend
-    #serviceName: hello-world
     servicePort: 80
-    #servicePort: 8080
   rules:
   - host: microservices.info
     http:
