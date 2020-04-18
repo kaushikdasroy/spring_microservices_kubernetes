@@ -6,10 +6,10 @@ metadata:
     nginx.ingress.kubernetes.io/rewrite-target: /
 spec:
   backend:
-    #serviceName: default-http-backend
-    serviceName: hello-world
-    #servicePort: 80
-    servicePort: 8080
+    serviceName: default-http-backend
+    #serviceName: hello-world
+    servicePort: 80
+    #servicePort: 8080
   rules:
   - host: microservices.info
     http:
